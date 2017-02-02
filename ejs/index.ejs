@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>EJS Practice</title>
+</head>
+<body>
+    <% for ( var i in info){ %>
+    <section class="storeContents">
+        <div class="imageContainer">
+            <img src="<%- info[i].image %>" alt="">
+        </div>
+        <div class="infoContents">
+            <h1><%- info[i].name %></h1>
+            <p><%- info[i].area %></p>
+            <a href="<%- info[i].link %>"></a>
+        </div>
+    </section
+    <%  }%>
+</body>
+</html>
